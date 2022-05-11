@@ -1,0 +1,56 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;    
+
+    .card {
+        margin: 20px;
+        width: 100%;
+        background: #847a71;
+        box-shadow: 0 4px 7px 0 rgba(0,0,0,.7);
+
+        .card-img {
+            img {
+                width: 100%;
+            }
+        }
+
+        .card-body {
+            padding: 25px 15px;
+            line-height: 1.5;
+            text-align: left;
+            color: #fff;
+
+            h3 {
+                cursor: pointer;
+                margin-bottom: 1rem;
+                color: #fff;
+
+                &:hover{
+                    color: rgb(196, 193, 193);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .content{
+        .card-body{
+            h3{
+                font-size: 16px;
+            }
+
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 592px) {
+    .content {
+        flex-wrap: wrap;
+    }
+}

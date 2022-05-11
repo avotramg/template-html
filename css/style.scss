@@ -1,0 +1,158 @@
+@import "scss/header";
+@import "scss/home";
+@import "scss/blog";
+@import "scss/service";
+@import "scss/hicking";
+@import "scss/explore";
+@import "scss/testim";
+@import "scss/subscribe";
+@import "scss/footer";
+@import "scss/menu-icon";
+@import "scss/menu-responsive";
+@import "scss/animations";
+
+$first-color: #847a71;
+$second-color: #edb57d;
+
+.ScrollTop{
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 15px;
+    border-radius: 10%;
+    background: #eee;
+    box-shadow: 0 0 7px 0 rgba(0,0,0,.7);
+    transition: background .5s box-shadow .7s ease-in-out .7s;
+    animation: pulse .2s;
+    display: none;
+    img{
+        width: 24px;
+    } 
+}
+
+@media (max-width: 768px){
+    .ScrollTop{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 592px){
+    .ScrollTop{
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+.ScrollTop.activate{
+    display: block;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    cursor: pointer;
+    background: #847a71;
+    color: #fff;
+    border-radius: 20px;
+    padding: 12px 45px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+
+    &:hover{
+        border: 1px solid #847a71;
+        color: #847a71;
+        background: transparent;
+    }
+}
+
+#nav-toggle{
+    background: transparent!important;
+}
+
+.btn-rm {
+    cursor: pointer;
+    background: #ea8228;
+    color: #fff;
+    border-radius: 20px;
+    padding: 12px 45px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+
+    &:hover{
+        border: 1px solid #ea8228;
+        color: #ea8228;
+        background: transparent;
+    }
+}
+
+#letsGo{
+    background: url("../images/shadow.jpg") no-repeat bottom center / cover;
+    padding-bottom: 6rem;
+}
+
+section {
+    overflow-x: hidden;
+    text-align: center;
+    padding: 15px 75px;
+
+    .head {
+        padding: 3.5rem 15rem;
+        .title {
+            font-size: 2.7rem;
+            color: $first-color;
+        }
+
+        .sub-title {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    section .head {
+        padding: 3.5rem 10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #nav-toggle {
+        display: block;
+    }
+
+    section {
+        padding: 15px 15px;
+
+        .head {
+            padding: 3.5rem 4rem;
+        }
+    }
+}
+
+@media (max-width: 592px) {
+    section {
+        padding: 15px 5px;
+
+        .head {
+            padding: 3.5rem 3rem;
+        }
+    }
+}

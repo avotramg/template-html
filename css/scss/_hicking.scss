@@ -1,0 +1,81 @@
+#hicking {
+    background: url(../images/img-div.jpg) no-repeat;
+    background-size: contain;
+    min-height: 50vh;
+    padding: 15% 20%;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+
+    h2 {
+        margin-bottom: 1rem;
+        font-size: 48px;
+        color: #fff;
+    }
+
+    p {
+        font-size: 1.5rem;
+        color: #eee;
+    }
+}
+
+@media (max-width: 1200px) {
+    #hicking {
+        padding: 15% 15%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #hicking {
+        padding: 14% 10%;
+
+        h2 {
+            font-size: 42px;
+        }
+
+        p {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@media (max-width: 858px) {
+    #hicking {
+        padding: 13% 8%;
+    }
+}
+
+@media (max-width: 768px) {
+    #hicking {
+        padding: 13% 5%;
+        min-height: 38vh;
+
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 592px) {
+    #hicking {
+        min-height: 18vh;
+        margin-bottom: 3.5rem;
+        background: #b1a9a6;
+    }
+}
+
+@media (max-width: 425px) {
+    #hicking {
+        padding: 10% 3%;
+        h2{
+            font-size: 22px;
+        }
+        p{
+            font-size: .8rem;
+        }
+    }
+}

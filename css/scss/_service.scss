@@ -1,0 +1,118 @@
+$first-color: #847a71;
+$second-color: #edb57d;
+
+#services {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3.5rem;
+    .content_1,
+    .content_2 {
+        display: flex;
+
+        .text {
+            text-align: left;
+            color: #fff;
+            h2 {
+                font-size: 40px;
+            }
+
+            p {
+                margin-top: 2rem;
+                line-height: 28px;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .img {
+            width: 50%;
+        }
+    }
+
+    .content_1 {
+        .text {
+            background: $first-color;
+            padding-bottom: 15%;
+            padding-top: 15%;
+            padding-left: 2rem;
+            padding-right: 10%;
+        }
+    }
+    .content_2 {
+        .text {
+            background: $second-color;
+            padding-bottom: 15%;
+            padding-top: 15%;
+            padding-left: 10%;
+            padding-right: 2rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .content_1 {
+        .text {
+            background: $first-color;
+            padding-bottom: 10% !important;
+            padding-top: 10% !important;
+            padding-right: 5% !important;
+        }
+    }
+    .content_2 {
+        .text {
+            background: $second-color;
+            padding-bottom: 10% !important;
+            padding-top: 10% !important;
+            padding-left: 5% !important;
+        }
+    }
+
+    .content_1,
+    .content_2 {
+        display: flex;
+
+        .text {
+            text-align: left;
+            color: #fff;
+            h2 {
+                font-size: 24px !important;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 592px) {
+    .content_1 {
+        .text {
+            background: $first-color;
+            padding-bottom: 5% !important;
+            padding-top: 5% !important;
+            padding-right: 2rem !important;
+        }
+    }
+    .content_2 {
+        .text {
+            background: $second-color;
+            padding-bottom: 5% !important;
+            padding-top: 5% !important;
+            padding-left: 2rem !important;
+            order: 2;
+        }
+
+        .img{
+            order: 1;
+        }
+    }
+
+    .content_1,
+    .content_2 {
+        flex-direction: column;
+
+        .img {
+            width: 100%!important;
+        }
+    }
+}

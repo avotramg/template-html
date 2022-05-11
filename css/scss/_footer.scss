@@ -1,0 +1,82 @@
+.footer {
+  background: url(../images/TEMPLATE-BREEZ.jpg) no-repeat top center/cover;
+  background-size: cover;
+  padding: 15% 5%;
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: 1fr 0.3fr 0.3fr 0.3fr;
+  grid-gap: 2rem;
+  overflow-x: hidden;
+
+  h2 {
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+
+  p {
+    color: #eee;
+  }
+
+  a {
+    color: #ccc;
+    text-transform: capitalize;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .about {
+    width: 100%;
+
+    .icon {
+      display: flex;
+      margin-top: 1rem;
+      img {
+        width: 32px;
+        cursor: pointer;
+        margin: 5px;
+      }
+    }
+  }
+
+  .link1,
+  .link2,
+  .link3 {
+    width: 100%;
+    margin-left: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    .link1,
+    .link2,
+    .link3 {
+      width: 100%;
+      margin-left: 15%;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 1.5rem;
+      }
+    
+      a, p {
+        font-size: 14px;
+      }
+  }
+}
+
+@media (max-width: 592px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+
+    .link1,
+    .link2,
+    .link3 {
+      margin-left: 0;
+    }
+  }
+}
